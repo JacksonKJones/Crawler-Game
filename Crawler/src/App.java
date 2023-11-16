@@ -4,7 +4,7 @@ class App {
 
     private static void initWindow() {
         // create a window frame and set the title in the toolbar
-        JFrame window = new JFrame("Crawl, SURVIVE")
+        JFrame window = new JFrame("Crawl, SURVIVE");
         // when the window is closed, stop the application
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -31,5 +31,7 @@ class App {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 initWindow();
+            }
+        });
     }
 }

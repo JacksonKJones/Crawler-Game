@@ -22,7 +22,7 @@ public class Dungeon extends JPanel implements ActionListener, KeyListener {
       private Timer timer;
       // objects that appear on the game dungeon
       private Player player;
-      private ArrayList keys;
+      private ArrayList<Key> keys;
 
       public Dungeon() {
         // set the game dungeon size
@@ -150,7 +150,7 @@ public class Dungeon extends JPanel implements ActionListener, KeyListener {
         // create the given number of keys in random positions on the dungeon.
         // note that there is not check here to prevent two keys from occupying the same
         // spot, nor to prevent keys from spawning in the same spot as the player
-        for (int i = 0; i < NUM_COINS; i++) {
+        for (int i = 0; i < NUM_KEYS; i++) {
             int keyX = rand.nextInt(COLUMNS);
             int keyY = rand.nextInt(ROWS);
             keyList.add(new Key(keyX, keyY));
