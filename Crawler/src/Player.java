@@ -1,5 +1,6 @@
 import java.awt.event.KeyEvent;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import java.awt.Point;
@@ -30,6 +31,7 @@ public class Player {
             // you can use just the filename if the image file is in your
             // project folder, otherwise you need to provide the file path.
             image = ImageIO.read(new File("Crawler/lib/images/player.png"));
+            Image resizedImage = image.getScaledInstance(Dungeon.TILE_SIZE*2, Dungeon.TILE_SIZE*2, Image.SCALE_DEFAULT);
         } catch (IOException exc) {
             System.out.println("Error opening image file: " + exc.getMessage());
         }

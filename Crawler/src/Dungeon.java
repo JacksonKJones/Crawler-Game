@@ -9,9 +9,9 @@ public class Dungeon extends JPanel implements ActionListener, KeyListener {
     // controls the delay between each tick in ms
     private final int DELAY = 25;
     // controls the size of the dungeon
-    public static final int TILE_SIZE = 50;
-    public static final int ROWS = 12;
-    public static final int COLUMNS = 18;
+    public static final int TILE_SIZE = 25;
+    public static final int ROWS = 40;
+    public static final int COLUMNS = 60;
 
       // controls how many keys appear on the dungeon
       public static final int NUM_KEYS = 1;

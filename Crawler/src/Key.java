@@ -1,4 +1,5 @@
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import java.awt.Point;
@@ -26,6 +27,7 @@ public class Key {
             // you can use just the filename if the image file is in your
             // project folder, otherwise you need to provide the file path.
             image = ImageIO.read(new File("Crawler/lib/images/key.png"));
+            image.getScaledInstance(Dungeon.TILE_SIZE, Dungeon.TILE_SIZE, BufferedImage.TYPE_INT_ARGB);
         } catch (IOException exc) {
             System.out.println("Error opening image file: " + exc.getMessage());
         }
