@@ -14,7 +14,7 @@ public class Dungeon extends JPanel implements ActionListener, KeyListener {
     public static final int COLUMNS = 60;
 
       // controls how many keys appear on the dungeon
-      public static final int NUM_KEYS = 1;
+      public static final int NUM_KEYS = 10;
       // suppress serialization warning
       private static final long serialVersionUID = 490905409104883233L;
       
